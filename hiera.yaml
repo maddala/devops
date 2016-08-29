@@ -1,0 +1,11 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "%{::hostname}"
+  - "%{::environment}"
+  - "%{::system_role}/%{::clientcert}"
+  - "%{::system_role}/%{::location}/common"
+  - "%{::system_role}/common"
+  - common
